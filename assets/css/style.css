@@ -613,7 +613,7 @@ footer{
 }
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .nav-button{
         display: none;
     }
@@ -698,17 +698,17 @@ footer{
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
-@media only screen and (max-width: 540px){
+@media screen and (max-width: 600px){
 
     .nav-menu-btn i{
         color: black;
     }
-    .featured-text{
+    /* .featured-text{
         margin-top: -300px; 
-    }
+    } */
     
     .featured-name{
-        
+        margin-top: 300px; 
         font-size: 40px;
     }
     .project-box{
@@ -720,8 +720,7 @@ footer{
     .input-field{
         width: 100%;
     }
-    .contact-info{
-      
-
+    .scroll-icon-box{
+        display: none;
     }
 }
