@@ -732,9 +732,7 @@ footer{
     .scroll-icon-box {
         display: none;
     }
-    .container{
-        width: fit-content;
-    }
+    
 }
 
 @media screen and (max-width : 320px){
@@ -742,7 +740,5 @@ footer{
         width: 250px;
        
     }
-    .container{
-        width: fit-content;
-    }
+   
 }
