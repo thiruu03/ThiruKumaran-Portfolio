@@ -688,6 +688,9 @@ footer{
 
 /* Devices with max width of 600px */
 @media screen and (max-width: 600px) {
+    .contact-info{
+        width: 300px;
+    }
     .nav-menu-btn i {
         color: black;
     }
