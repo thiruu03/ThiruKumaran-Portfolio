@@ -601,26 +601,15 @@ footer{
 
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
-@media only screen and (max-width: 1024px){
-    
-    .featured-text{
-        padding: 0;
-    }
-    .image, .image img{
-        width: 320px;
-        height: 320px;
-    }
-}
-
-/* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
+/* Devices with max width of 900px */
 @media screen and (max-width: 900px) {
-    .nav-button{
+    .nav-button {
         display: none;
     }
-    .nav-menu.responsive{
+    .nav-menu.responsive {
         left: 0;
     }
-    .nav-menu{
+    .nav-menu {
         position: fixed;
         top: 80px;
         left: -100%;
@@ -632,95 +621,108 @@ footer{
         width: 100%;
         min-height: 450px;
         height: 90vh;
-        transition: .3s;
+        transition: 0.3s;
+        z-index: 1000; /* Ensure navbar is on top */
     }
-    .nav_menu_list{
+    .nav_menu_list {
         flex-direction: column;
     }
-    .nav-menu-btn{
+    .nav-menu-btn {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .featured-box{
-        
+    .featured-box {
         flex-direction: column;
         justify-content: center;
         height: 100vh;
+        padding-top: 80px; /* Add padding to prevent overlap */
     }
-    .featured-text{
-        margin-top: -300px; 
+    .featured-text {
+        margin-top: 0; /* Remove negative margin */
         width: 100%;
         order: 2;
         justify-content: center;
         align-content: flex-start;
         min-height: 60vh;
+        z-index: 999; /* Ensure featured text is above most elements */
     }
-    .social_icons{
+    .social_icons {
         margin-top: 2em;
     }
-    .featured-image{
+    .featured-image {
         order: 1;
         justify-content: center;
         min-height: 150px;
         width: 100%;
         margin-top: 65px;
     }
-    .image, .image img{
-        width: 150px;
-        height: 150px;
+    .image, .image img {
+        width: 40%;
+        height: auto;
     }
-    .row{
+    .row {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 50px;
     }
-    .col{
+    .col {
         display: flex;
         justify-content: center;
         width: 100%;
     }
-    .about-info, .contact-info{
+    .about-info, .contact-info {
         width: fit-content;
     }
-    .project-container{
+    .project-container {
         justify-content: center;
     }
-    .project-box{
+    .project-box {
         width: 80%;
     }
-    .nav-menu-btn i{
+    .nav-menu-btn i {
         color: black;
     }
-
 }
 
-/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
-
-@media screen and (max-width: 600px){
-
-    .nav-menu-btn i{
+/* Devices with max width of 600px */
+@media screen and (max-width: 600px) {
+    .nav-menu-btn i {
         color: black;
     }
-    /* .featured-text{
-        margin-top: -300px; 
-    } */
-    
-    .featured-name{
-        margin-top: 50vh; 
+    .featured-box {
+        padding-top: 100px; /* Increase padding for smaller screens */
+    }
+    .featured-text {
+        margin-top: 0; /* Ensure no negative margin */
+        width: 100%;
+        order: 2;
+        justify-content: center;
+        align-content: flex-start;
+        min-height: 60vh;
+        z-index: 999; /* Ensure featured text is above most elements */
+    }
+    .featured-name {
+       
         font-size: 40px;
     }
-    .project-box{
+    .project-box {
         width: 100%;
     }
-    .form-inputs{
+    .form-inputs {
         flex-direction: column;
     }
-    .input-field{
+    .input-field {
         width: 100%;
     }
-    .scroll-icon-box{
+    .scroll-icon-box {
         display: none;
+    }
+}
+
+@media screen and (max-width : 320px){
+    .contact-info{
+        width: 200px;
     }
 }
