@@ -698,6 +698,13 @@ footer{
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px){
+    .nav{
+        background: transparent;
+    }
+    .container{
+        width: 77%;
+        position: relative;
+    }
     .nav-menu-btn i{
         color: black;
     }
