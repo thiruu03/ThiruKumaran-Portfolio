@@ -236,13 +236,13 @@ i{
 }
 
 /* ----- FEATURED IMAGE BOX ----- */
-/* .featured-image{
+.featured-image{
     display: flex;
     justify-content: right;
     align-content: center;
     min-height: 80vh;
     width: 50%;
-} */
+}
 .image{
     margin: auto 0;
     width: 380px;
