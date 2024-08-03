@@ -174,7 +174,7 @@ nav{
     align-content: center;
     min-height: 80vh;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     padding-left: 20px;
 }
 .featured-text-card span{
@@ -236,13 +236,13 @@ i{
 }
 
 /* ----- FEATURED IMAGE BOX ----- */
-.featured-image{
+/* .featured-image{
     display: flex;
     justify-content: right;
     align-content: center;
     min-height: 80vh;
     width: 50%;
-}
+} */
 .image{
     margin: auto 0;
     width: 380px;
@@ -698,13 +698,7 @@ footer{
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px){
-    nav{
-        background: transparent;
-    }
-    .container{
-        width: 77%;
-        position: relative;
-    }
+
     .nav-menu-btn i{
         color: black;
     }
