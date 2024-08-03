@@ -665,7 +665,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 50px;
+        align-items: center;
     }
     .col {
         display: flex;
@@ -684,12 +684,18 @@ footer{
     .nav-menu-btn i {
         color: black;
     }
+    #contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 /* Devices with max width of 600px */
 @media screen and (max-width: 600px) {
     .contact-info{
-        width: 300px;
+       width: fit-content;
     }
     .nav-menu-btn i {
         color: black;
