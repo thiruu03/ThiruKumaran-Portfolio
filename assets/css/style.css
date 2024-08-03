@@ -616,7 +616,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(239, 239, 239, 0.7);
         backdrop-filter: blur(20px);
         width: 100%;
         min-height: 450px;
@@ -732,11 +732,17 @@ footer{
     .scroll-icon-box {
         display: none;
     }
+    .container{
+        width: fit-content;
+    }
 }
 
 @media screen and (max-width : 320px){
     .contact-info{
-        width: 200px;
+        width: 250px;
        
+    }
+    .container{
+        width: fit-content;
     }
 }
