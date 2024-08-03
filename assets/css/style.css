@@ -621,7 +621,7 @@ footer{
         width: 100%;
         min-height: 450px;
         height: 90vh;
-        transition: .3s;
+        transition: 0.3s;
     }
     .nav_menu_list{
         flex-direction: column;
@@ -644,7 +644,7 @@ footer{
         justify-content: center;
         align-content: flex-start;
         min-height: 60vh;
-        z-index: 0 /* Ensure featured text is above most elements */
+        z-index: 0px ;/* Ensure featured text is above most elements */
     }
     .social_icons {
         margin-top: 2em;
