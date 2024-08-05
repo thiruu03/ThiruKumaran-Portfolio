@@ -1,13 +1,19 @@
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction() {
   var menuBtn = document.getElementById("myNavMenu");
+  var overlay = document.querySelector(".nav-overlay");
 
   if (menuBtn.className === "nav-menu") {
-    menuBtn.className += " responsive";
+      menuBtn.className += " responsive";
+      overlay.style.display = "block"; // Show the overlay
+      document.body.style.overflow = "hidden"; // Disable background scrolling
   } else {
-    menuBtn.className = "nav-menu";
+      menuBtn.className = "nav-menu";
+      overlay.style.display = "none"; // Hide the overlay
+      document.body.style.overflow = ""; // Re-enable background scrolling
   }
 }
+
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function () {
@@ -97,9 +103,12 @@ const navLinks = document.querySelectorAll('.nav-menu a');
 
 navLinks.forEach(link => {
   link.addEventListener('click', function () {
-    const menuBtn = document.getElementById("myNavMenu");
+      const menuBtn = document.getElementById("myNavMenu");
+      const overlay = document.querySelector(".nav-overlay");
 
-    // Hide the menu after clicking a link
-    menuBtn.className = "nav-menu";
+      // Hide the menu and overlay
+      menuBtn.className = "nav-menu";
+      overlay.style.display = "none";
+      document.body.style.overflow = ""; // Re-enable background scrolling
   });
 });

@@ -702,12 +702,36 @@ footer{
         transition: left 0.3s ease;
     }
 
-    
+
     
 }
 
 /* Devices with max width of 600px */
 @media screen and (max-width: 600px) {
+
+    /* General overlay styling, initially hidden */
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(201, 201, 201, 0.914); /* Slightly transparent black */
+    z-index: 999; /* Ensure it's above all content but below the nav menu */
+    display: none; /* Hidden by default */
+}
+
+/* Display the overlay when the menu is open */
+.nav-menu.responsive + .nav-overlay {
+    display: block;
+}
+
+/* Navigation menu styling */
+.nav-menu {
+    z-index: 1000; /* Ensure the menu is above the overlay */
+    /* other styles */
+}
+
 
     .social_icons {
         margin-top: 20px; /* Adjust the spacing as needed */
