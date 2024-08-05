@@ -601,6 +601,16 @@ footer{
 
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
+@media only screen and (max-width: 1024px){
+    .featured-text{
+        padding: 0;
+    }
+    .image, .image img{
+        width: 320px;
+        height: 320px;
+    }
+}
+
 /* Devices with max width of 900px */
 @media screen and (max-width: 900px) {
     .nav-button{
@@ -621,7 +631,7 @@ footer{
         width: 100%;
         min-height: 450px;
         height: 90vh;
-        transition: 0.3s;
+        /* transition: .3s; */
     }
     .nav_menu_list{
         flex-direction: column;
@@ -635,16 +645,14 @@ footer{
         flex-direction: column;
         justify-content: center;
         height: 100vh;
-        padding-top: 80px; /* Add padding to prevent overlap */
+       
     }
     .featured-text {
-        margin-top: 0; /* Remove negative margin */
         width: 100%;
         order: 2;
         justify-content: center;
         align-content: flex-start;
         min-height: 60vh;
-        z-index: 0px ;/* Ensure featured text is above most elements */
     }
     .social_icons {
         margin-top: 2em;
@@ -656,10 +664,10 @@ footer{
         width: 100%;
         margin-top: 65px;
     }
-    .image, .image img {
+    /* .image, .image img {
         width: 40%;
         height: auto;
-    }
+    } */
     .row {
         display: flex;
         flex-direction: column;
@@ -689,10 +697,20 @@ footer{
         justify-content: center;
         flex-direction: column;
     }
+
+    .nav-menu {
+        transition: left 0.3s ease;
+    }
+    
 }
 
 /* Devices with max width of 600px */
 @media screen and (max-width: 600px) {
+
+    .nav-menu {
+        transition: left 0.3s ease;
+    }
+    
     .contact-info{
        width: fit-content;
       
@@ -705,16 +723,16 @@ footer{
         color: black;
     }
     .featured-box {
-        padding-top: 100px; /* Increase padding for smaller screens */
+        padding-top: 100px; 
     }
     .featured-text {
-        margin-top: 0; /* Ensure no negative margin */
+        margin-top: 0; 
         width: 100%;
         order: 2;
         justify-content: center;
         align-content: flex-start;
         min-height: 60vh;
-        z-index: 0; /* Ensure featured text is above most elements */
+        z-index: 0; 
     }
     .featured-name {
        
