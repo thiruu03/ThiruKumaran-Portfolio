@@ -779,14 +779,14 @@ footer{
 }
 
 
-    .social_icons {
-        margin-top: 20px; /* Adjust the spacing as needed */
-        margin-bottom: 20px; /* Adjust the spacing as needed */
-        order: 3; /* Ensure it comes after other elements like projects and download buttons */
+    /* .social_icons {
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+        order: 3; 
         display: flex;
         justify-content: center;
-        transition: none !important; /* Disable any transition effect */
-    }
+        transition: none !important; 
+    } */
 
     .nav-menu {
         transition: left 0.3s ease;
