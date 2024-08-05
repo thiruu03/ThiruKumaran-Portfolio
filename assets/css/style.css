@@ -709,6 +709,52 @@ footer{
 /* Devices with max width of 600px */
 @media screen and (max-width: 600px) {
 
+    /* Navigation Menu for Mobile View */
+@media screen and (max-width: 600px) {
+    .nav-menu {
+        position: fixed; /* Fix the menu to the viewport */
+        top: 0;
+        left: 0;
+        width: 100vw; /* Full width of the viewport */
+        height: 100vh; /* Full height of the viewport */
+        overflow: hidden; /* Prevent scrolling within the menu */
+        z-index: 1000; /* Ensure it's on top of other content */
+        background: rgba(239, 239, 239, 0.9); /* Semi-transparent background */
+        backdrop-filter: blur(20px); /* Blur background effect */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.3s ease; /* Smooth transition */
+    }
+
+    /* Responsive menu specific adjustments */
+    .nav-menu.responsive {
+        left: 0; /* Position the menu to be visible */
+    }
+
+    /* Hide the menu by default */
+    .nav-menu:not(.responsive) {
+        left: -100vw; /* Hide the menu off-screen */
+    }
+
+    /* Navigation Links Styling */
+    .nav-menu a {
+        font-size: 18px; /* Adjust the font size as needed */
+        padding: 15px 0; /* Spacing between links */
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        width: 100%; /* Full width links */
+    }
+
+    /* Disable link hover effect, optional */
+    .nav-menu a:hover {
+        background: none; /* Remove hover background */
+    }
+}
+
+
     /* General overlay styling, initially hidden */
 .nav-overlay {
     position: fixed;
