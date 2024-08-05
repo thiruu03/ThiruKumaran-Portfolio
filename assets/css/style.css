@@ -631,7 +631,7 @@ footer{
         width: 100%;
         min-height: 450px;
         height: 90vh;
-        /* transition: .3s; */
+        transition: .3s;
     }
     .nav_menu_list{
         flex-direction: column;
@@ -701,11 +701,22 @@ footer{
     .nav-menu {
         transition: left 0.3s ease;
     }
+
+    
     
 }
 
 /* Devices with max width of 600px */
 @media screen and (max-width: 600px) {
+
+    .social_icons {
+        margin-top: 20px; /* Adjust the spacing as needed */
+        margin-bottom: 20px; /* Adjust the spacing as needed */
+        order: 3; /* Ensure it comes after other elements like projects and download buttons */
+        display: flex;
+        justify-content: center;
+        transition: none !important; /* Disable any transition effect */
+    }
 
     .nav-menu {
         transition: left 0.3s ease;
