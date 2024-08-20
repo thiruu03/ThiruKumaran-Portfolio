@@ -1,11 +1,17 @@
 #project-image-res {
     display: none;
 }
+#pjt-abt{
+    display: none;
+}
 
 @media only screen and (max-width : 900px){
     #project-image{  
         height: 380px;
         width: 662px;
+    }
+    #pjt-abt{
+        display: none;
     }
 
     .nav-menu-btn i{
@@ -16,6 +22,14 @@
 @media only screen and (max-width: 540px) {
     #project-image {
         display: none;
+    }
+    #pjt-abt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        display: block;
+        padding: 10px;
     }
 
 
