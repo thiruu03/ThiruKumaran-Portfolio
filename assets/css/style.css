@@ -134,7 +134,7 @@ nav{
 .active-link{
     position: relative;
     color: var(--first-color);
-    transition: .3;
+    /* transition: .3; */
 }
 .active-link::after{
     content:'';
@@ -247,19 +247,19 @@ i{
     height: 380px;
     border-radius: 55% 45% 55% 45%;
     overflow: hidden;
-    animation: imgFloat 7s ease-in-out infinite;
+    /* animation: imgFloat 7s ease-in-out infinite; */
 }
 .image img{
     width: 380px;
     height: 380px;
     object-fit: cover;
 }
-@keyframes imgFloat {
+/* @keyframes imgFloat {
     50%{
         transform: translateY(10px);
         border-radius: 45% 55% 45% 55%;
     }
-}
+} */
 .scroll-btn{
    position: absolute;
    bottom: 0;
@@ -279,6 +279,7 @@ i{
 }
 .scroll-btn i{
     font-size: 20px;
+    color: black;
 }
 
 /* ----- MAIN BOX ----- */
@@ -840,4 +841,9 @@ footer{
        
     }
    
+}
+
+* {
+    animation: none !important;
+    transition: none !important;
 }
